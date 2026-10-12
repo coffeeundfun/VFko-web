@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vfko.cz/sitemap.xml
