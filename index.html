@@ -172,15 +172,15 @@
       <div class="dl-half">
         <h3>Windows</h3>
         <p class="meta">Windows 10 a 11 (64bitové)</p>
-        <a class="btn btn-primary href="https://apps.microsoft.com/detail/9n41tp4w05vw" style="margin-top: 8px;"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"/><path d="M7 11l5 5l5 -5"/><path d="M12 4l0 12"/></svg>Stáhnout pro Windows</a>
-        <p class="meta">Soubor VFko-1.0.2-setup.exe z GitHub Releases</p>
+        <a class="btn btn-primary" id="dl-windows" href="https://apps.microsoft.com/detail/9N41TP4W05VW?referrer=appbadge&amp;mode=full" style="margin-top: 8px;"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"/><path d="M7 11l5 5l5 -5"/><path d="M12 4l0 12"/></svg>Stáhnout pro Windows</a>
+        <p class="meta">Z Microsoft Store, aktualizace se instalují samy</p>
       </div>
     </div>
     <div class="store-row">
       <button class="btn btn-store" type="button" disabled aria-disabled="true">App Store: připravujeme</button>
-      <button class="btn btn-store" type="button" disabled aria-disabled="true">Microsoft Store: připravujeme</button>
+      <a class="store-badge" href="https://apps.microsoft.com/detail/9N41TP4W05VW?referrer=appbadge&amp;mode=full" target="_blank" rel="noopener noreferrer"><img src="/assets/img/microsoft-store-cs.svg" alt="Stáhnout z Microsoft Store" height="48" style="height: 48px; width: auto; display: block;"></a>
     </div>
-    <p class="meta" style="margin-top: 20px;">Verze 1.0.2, vydáno 12. 10. 2026..</p>
+    <p class="meta" style="margin-top: 20px;">Verze 1.0.2, vydáno 12. 10. 2026.</p>
   </div>
 </section>
 
@@ -239,6 +239,9 @@
   if (!/win/i.test(ua)) return;
   var a = document.querySelector("#cta-hlavni span"), b = document.querySelector("#cta-druhy span");
   if (a && b) { a.textContent = "Stáhnout pro Windows"; b.textContent = "Stáhnout pro macOS"; }
+  // Windows: hlavní tlačítko vede rovnou do Microsoft Store
+  var hlavni = document.getElementById("cta-hlavni"), win = document.getElementById("dl-windows");
+  if (hlavni && win) hlavni.href = win.href;
 })();
 </script>
 </body>
