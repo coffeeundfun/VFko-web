@@ -165,14 +165,22 @@
     <div class="dl">
       <div class="dl-half">
         <h3>macOS</h3>
-        <p class="meta">macOS 13 Ventura a novější, Apple Silicon a Intel</p>
-        <a class="btn btn-primary" href="https://github.com/coffeeundfun/vfko/releases/latest" style="margin-top: 8px;"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"/><path d="M7 11l5 5l5 -5"/><path d="M12 4l0 12"/></svg>Stáhnout pro macOS</a>
-        <p class="meta">Soubor VFko-1.0.2.dmg z GitHub Releases</p>
+        <p class="meta">macOS 13 Ventura a novější. Vyberte podle procesoru vašeho Macu.</p>
+        <!-- Při vydání nové verze upravte tag (v1.0.2) a názvy souborů v obou odkazech. -->
+        <div class="dl-btns">
+          <a class="btn btn-primary btn-dl" id="dl-mac-arm" href="https://github.com/coffeeundfun/vfko/releases/download/v1.0.2/VFko-1.0.2-macOS-AppleSilicon.dmg"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"/><path d="M7 11l5 5l5 -5"/><path d="M12 4l0 12"/></svg><span>Apple Silicon</span></a>
+          <a class="btn btn-outline btn-dl" id="dl-mac-intel" href="https://github.com/coffeeundfun/vfko/releases/download/v1.0.2/VFko-1.0.2-macOS-Intel.dmg"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"/><path d="M7 11l5 5l5 -5"/><path d="M12 4l0 12"/></svg><span>Intel</span></a>
+        </div>
+        <p class="meta">Který Mac máte? Nabídka Apple → O tomto Macu. „Čip Apple M1“ a novější znamená Apple Silicon, „Procesor Intel“ znamená Intel.</p>
+        <p class="meta">Soubory DMG z <a href="https://github.com/coffeeundfun/vfko/releases/latest">GitHub Releases</a>, kde najdete i kontrolní součty SHA&#8209;256.</p>
       </div>
       <div class="dl-half">
         <h3>Windows</h3>
         <p class="meta">Windows 10 a 11</p>
-        <a class="store-badge" id="dl-windows" href="https://apps.microsoft.com/detail/9N41TP4W05VW?referrer=appbadge&amp;mode=full" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 7px;"><img src="/assets/img/microsoft-store-cs.svg" alt="Stáhnout z Microsoft Store" height="48" style="height: 48px; width: auto; display: block;"></a>
+        <div class="dl-btns">
+          <a class="store-badge" id="dl-windows" href="https://apps.microsoft.com/detail/9N41TP4W05VW?referrer=appbadge&amp;mode=full" target="_blank" rel="noopener noreferrer"><img src="/assets/img/microsoft-store-cs.svg" alt="Stáhnout z Microsoft Store" width="220"></a>
+        </div>
+        <p class="meta">Z Microsoft Store se aplikace aktualizuje automaticky.</p>
       </div>
     </div>
     <div class="store-row">
