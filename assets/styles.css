@@ -31,7 +31,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .ph{background:rgba(255,214,102,.38);border-radius:2px;padding:0 3px}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
-/* Tlačítka */
+/* buttons */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;white-space:nowrap;border-radius:var(--r-ctl);font:600 15px/1 var(--font);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:background-color .2s ease,transform .2s cubic-bezier(.16,1,.3,1),box-shadow .2s ease}
 .btn:active{transform:translateY(1px)}
 .btn-white{background:#fff;color:var(--brand-navy);box-shadow:0 6px 20px rgba(11,61,145,.25)}.btn-white:hover{background:#EAF2FE;color:var(--brand-navy)}
@@ -41,7 +41,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .link-arrow{display:inline-flex;align-items:center;gap:8px;font:600 15px/1 var(--font);text-decoration:none;transition:gap .2s ease}
 .link-arrow:hover{gap:12px}
 
-/* Úvodní plocha (jediná plocha s přechodem) */
+/* hero */
 .hero{position:relative;background:radial-gradient(900px 560px at 82% 8%,rgba(36,195,218,.30),rgba(36,195,218,0) 70%),linear-gradient(135deg,var(--tg-start) 0%,#1160B8 48%,var(--tg-end) 100%);color:#fff}
 .hero::before{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(to bottom,rgba(255,255,255,.07) 0 2px,transparent 2px 30px);-webkit-mask-image:radial-gradient(640px 420px at 78% 40%,#000 0%,transparent 75%);mask-image:radial-gradient(640px 420px at 78% 40%,#000 0%,transparent 75%)}
 .nav{position:relative;display:flex;align-items:center;justify-content:space-between;gap:24px;height:76px}
@@ -59,14 +59,14 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .window-bar{height:34px;display:flex;align-items:center;gap:8px;padding:0 14px;background:#EDF2F8;border-bottom:1px solid #DCE5F0}
 .dot{width:12px;height:12px;border-radius:50%;background:#CBD5E2}
 
-/* Sekce */
+/* section */
 .section{padding:112px 0 120px}
 .section.first{padding-top:200px}
 .section.tight{padding-top:0}
 .h2{margin:0 0 16px;font:600 40px/46px var(--font);letter-spacing:-.02em;color:var(--ink);text-wrap:balance}
 .lead{margin:0;font:400 18px/28px var(--font);color:var(--ink-muted);max-width:36em;text-wrap:pretty}
 
-/* Dlaždice výhod */
+/* benefit section */
 .bento{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:20px;margin-top:48px}
 .cell{border-radius:var(--r-panel);padding:36px;display:flex;flex-direction:column;gap:12px;overflow:hidden;position:relative}
 .cell h3{margin:0;font:600 24px/30px var(--font);letter-spacing:-.01em}
@@ -83,7 +83,6 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 4px;padding:0;list-style:none}
 .chips li{padding:7px 11px;border-radius:var(--r-ctl);background:var(--action-soft);color:var(--brand-navy);font:500 14px/18px var(--font)}
 
-/* Kroky */
 .steps-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:72px;align-items:start}
 .steps{list-style:none;margin:0;padding:0}
 .steps li{display:grid;grid-template-columns:72px minmax(0,1fr);gap:8px;padding:28px 0;border-top:1px solid var(--border-strong)}
@@ -92,14 +91,12 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .steps h3{margin:2px 0 8px;font:600 20px/26px var(--font)}
 .steps p{margin:0;font:400 16px/25px var(--font);color:var(--ink-muted)}
 
-/* Funkce */
 .feats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:48px;row-gap:44px;margin-top:56px;padding-top:44px;border-top:1px solid var(--border-strong)}
 .feat{display:flex;flex-direction:column;gap:10px}
 .ico{width:44px;height:44px;border-radius:var(--r-ctl);background:var(--surface-card);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--action)}
 .feat h3{margin:6px 0 0;font:600 18px/24px var(--font)}
 .feat p{margin:0;font:400 15px/24px var(--font);color:var(--ink-muted)}
 
-/* Soukromí */
 .privacy{position:relative;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:72px;align-items:center}
 .glass-wrap{position:relative}
 .blob{position:absolute;border-radius:50%;filter:blur(60px);pointer-events:none}
@@ -112,7 +109,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .plist strong{display:block;font:600 17px/24px var(--font);color:var(--ink);margin-bottom:4px}
 .plist span{font:400 15px/23px var(--font);color:var(--ink)}
 
-/* Stažení */
+/* download */
 .dl{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);margin-top:48px;background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--r-panel);overflow:hidden}
 .dl-half{padding:40px;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
 .dl-half + .dl-half{border-left:1px solid var(--border-subtle)}
@@ -120,7 +117,10 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .meta{margin:0;font:400 14px/21px var(--font);color:var(--ink-muted)}
 .store-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:24px}
 
-/* Časté otázky */
+.store-badge { display: inline-block; margin-top: 8px; line-height: 0; -webkit-user-select: none; user-select: none; }
+.store-badge img { height: 48px; width: auto; -webkit-user-drag: none; }
+
+/* faq */
 .faq-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:72px;align-items:start}
 .faq{border-top:1px solid var(--border-strong)}
 .faq details{border-bottom:1px solid var(--border-strong)}
@@ -131,7 +131,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .faq details[open] summary::after{transform:translateY(3px) rotate(-135deg)}
 .faq p{margin:0 0 24px;font:400 16px/26px var(--font);color:var(--ink-muted);max-width:40em}
 
-/* O nás */
+/* About us */
 .about{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:72px;align-items:start;padding-top:56px;border-top:1px solid var(--border-strong)}
 .about p{margin:0;font:400 17px/28px var(--font);color:var(--ink);max-width:34em}
 .reg{margin:0;border:1px solid var(--border-subtle);border-radius:var(--r-card);background:#fff}
@@ -140,7 +140,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .reg-row dt{color:var(--ink-muted)}
 .reg-row dd{margin:0;color:var(--ink);font-weight:500}
 
-/* Patička */
+/* footer */
 .footer{background:var(--brand-navy);color:#DCE7F8}
 .foot-top{display:flex;justify-content:space-between;align-items:flex-start;gap:40px;flex-wrap:wrap;padding:56px 0 40px}
 .foot-brand{display:flex;flex-direction:column;gap:14px}
@@ -152,7 +152,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .foot-bottom{border-top:1px solid rgba(255,255,255,.18);padding:20px 0 28px;font:400 13px/20px var(--font);color:#C9D8F0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .foot-bottom .ph{color:#fff}
 
-/* Podstránky: světlá hlavička s modrým logem */
+/* subpages */
 .subhead{background:var(--surface-card);border-bottom:1px solid var(--border-subtle)}
 .subhead .nav{height:72px}
 .subhead .nav-links a.nl{color:var(--ink);opacity:1}
@@ -193,7 +193,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .lic pre{margin:0;padding:0 20px 20px;font:400 13px/20px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;color:var(--ink)}
 .fn{max-width:760px;margin:0;padding-bottom:48px}
 
-/* Zpracování údajů jako karty */
+/* subpage */
 .proc{display:grid;gap:16px;margin:8px 0 24px}
 .proc article{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--r-card);padding:24px}
 .proc h3{margin:0 0 14px;font:600 18px/24px var(--font)}
@@ -214,7 +214,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .rel-body li::marker{color:var(--action)}
 .rel-links{margin-top:24px;display:flex;gap:24px;flex-wrap:wrap}
 
-/* Chybová stránka */
+/* error */
 .notfound{min-height:60vh;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:16px;padding:96px 0}
 .notfound h1{margin:0;font:600 48px/54px var(--font);letter-spacing:-.02em}
 
