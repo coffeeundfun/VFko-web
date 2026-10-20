@@ -117,8 +117,14 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .meta{margin:0;font:400 14px/21px var(--font);color:var(--ink-muted)}
 .store-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:24px}
 
-.store-badge { display: inline-block; margin-top: 8px; line-height: 0; -webkit-user-select: none; user-select: none; }
-.store-badge img { height: 48px; width: auto; -webkit-user-drag: none; }
+.dl-btns{display:flex;flex-direction:column;gap:12px;align-items:flex-start;margin-top:8px}
+.btn-dl{width:220px;min-height:56px;font-size:16px}
+.btn-outline{background:#fff;color:var(--action);border-color:var(--action)}
+.btn-outline:hover{background:var(--action-soft);color:var(--action-hover);border-color:var(--action-hover)}
+.store-badge{display:inline-block;line-height:0;border-radius:8px;-webkit-user-select:none;user-select:none}
+.store-badge img{display:block;width:220px;height:auto;pointer-events:none}
+.store-badge:focus-visible{outline:2px solid var(--action);outline-offset:3px}
+
 
 /* faq */
 .faq-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:72px;align-items:start}
