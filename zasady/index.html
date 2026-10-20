@@ -39,7 +39,8 @@
   <div class="wrap">
     <div class="doc-head">
       <h1>Zásady ochrany osobních údajů</h1>
-      <p class="lead">Platné od 12. 10. 2026. Jak VFko a web vfko.cz zacházejí s osobními údaji.</p>
+      <!-- DATUM: doplnit datum vydání verze 1.1.0 (zde, v čl. 10 a na stránce předchozího znění) -->
+      <p class="lead">Platné od [DOPLNIT DATUM]. Jak VFko a web vfko.cz zacházejí s osobními údaji. <a href="/zasady/2026-10-12/">Předchozí znění</a></p>
     </div>
 
     <article class="doc prose">
@@ -52,6 +53,7 @@
           <li><a href="#web">Návštěva webu</a></li>
           <li><a href="#sluzby">Služby, se kterými aplikace komunikuje</a></li>
           <li><a href="#predani">Předání mimo EU</a></li>
+          <li><a href="#obchody">Aplikace z obchodu s aplikacemi</a></li>
           <li><a href="#povinnost">Je poskytnutí údajů povinné?</a></li>
           <li><a href="#prava">Vaše práva</a></li>
           <li><a href="#zmeny">Účinnost a změny</a></li>
@@ -64,7 +66,7 @@
 
       <h2 id="shrnuti">2. Shrnutí</h2>
       <div class="note">
-        <p>VFko je desktopová aplikace. Doklady, údaje odběratelů a nastavení ukládá jen ve vašem počítači a správce k nim nemá přístup. Za údaje svých odběratelů, které do aplikace zadáváte, odpovídáte jako jejich správce vy. Technický záznam (log) zůstává v počítači, dokud ho sami neodešlete.</p>
+        <p>VFko je desktopová aplikace. Doklady, údaje odběratelů a nastavení ukládá jen ve vašem počítači a správce k nim nemá přístup. Za údaje svých odběratelů, které do aplikace zadáváte, odpovídáte jako jejich správce vy. Technický záznam (log) zůstává v počítači, dokud ho sami neodešlete. Hlášení chyb a kontrola nových verzí fungují jen tehdy, když je v aplikaci povolíte. Vaše volby i souhlas s licenčními podmínkami se ukládají jen ve vašem počítači.</p>
       </div>
 
       <h2 id="zpracovani">3. Kdy osobní údaje zpracováváme</h2>
@@ -77,6 +79,16 @@
             <dt>Právní základ</dt><dd>Souhlas (čl. 6 odst. 1 písm. a GDPR).</dd>
             <dt>Příjemce</dt><dd>Functional Software, Inc. (Sentry) jako zpracovatel. Data jsou uložená v EU (Frankfurt).</dd>
             <dt>Doba uložení</dt><dd>30 dní.</dd>
+          </dl>
+        </article>
+        <article>
+          <h3>Kontrola nových verzí (jen se souhlasem)</h3>
+          <dl>
+            <dt>Jaké údaje</dt><dd>IP adresa vašeho zařízení a technické údaje dotazu: verze aplikace a operační systém. Jiné údaje se neodesílají.</dd>
+            <dt>Účel</dt><dd>Upozornění, že je k dispozici nová verze aplikace. Aplikace nic nestahuje ani neinstaluje sama. Ve verzích z Microsoft Store a Apple App Store se kontrola nepoužívá, aktualizace tam zajišťuje obchod (čl. 7).</dd>
+            <dt>Právní základ</dt><dd>Souhlas (čl. 6 odst. 1 písm. a GDPR).</dd>
+            <dt>Příjemce</dt><dd>GitHub, Inc. (GitHub Pages), který provozuje web vfko.cz. Správce k záznamům o přístupu nemá přístup.</dd>
+            <dt>Doba uložení</dt><dd>Správce údaje neukládá. GitHub uchovává záznamy o přístupu podle svých zásad. Datum poslední kontroly se ukládá jen ve vašem počítači.</dd>
           </dl>
         </article>
         <article>
@@ -109,23 +121,27 @@
       <ul>
         <li><strong>ARES (Ministerstvo financí):</strong> při načtení podle IČO se odesílá zadané IČO.</li>
         <li><strong>Fio banka (API):</strong> při kontrole úhrad se odesílá váš token a období. Token je uložený v systémové klíčence.</li>
+        <li><strong>vfko.cz (GitHub Pages):</strong> při kontrole nových verzí, jen se souhlasem, se jednou denně načte informace o aktuální verzi (viz čl. 3).</li>
       </ul>
 
       <h2 id="predani">6. Předání mimo EU</h2>
       <p>Sentry ukládá hlášení v EU, ale jako americká společnost může k datům přistupovat i z USA. Functional Software, Inc. i GitHub, Inc. jsou certifikované v rámci EU-US Data Privacy Framework. Pro ostatní přenosy Sentry používá standardní smluvní doložky Evropské komise.</p>
 
-      <h2 id="povinnost">7. Je poskytnutí údajů povinné?</h2>
-      <p>Ne. Hlášení chyb i kontakt jsou dobrovolné. Bez souhlasu funguje aplikace úplně stejně. Automatizované rozhodování ani profilování neprobíhá.</p>
+      <h2 id="obchody">7. Aplikace z obchodu s aplikacemi</h2>
+      <p>Stáhnete-li VFko z Microsoft Store (případně z Apple App Store), zajišťuje stažení, instalaci a aktualizace provozovatel obchodu podle svých zásad ochrany osobních údajů (<a href="https://privacy.microsoft.com/cs-cz/privacystatement" rel="noopener">Prohlášení Microsoftu o zásadách ochrany osobních údajů</a>, <a href="https://www.apple.com/cz/legal/privacy/" rel="noopener">zásady Apple</a>). Správce od provozovatele obchodu dostává jen souhrnné statistiky, například počty stažení a souhrnné údaje o pádech aplikace, ze kterých nelze poznat konkrétního uživatele. Recenze a hodnocení, které v obchodě zveřejníte, vidí správce stejně jako ostatní návštěvníci obchodu.</p>
 
-      <h2 id="prava">8. Vaše práva</h2>
-      <p>Máte právo na přístup, opravu, výmaz, omezení zpracování a přenositelnost údajů. Souhlas s hlášením chyb můžete kdykoli odvolat v aplikaci (Nastavení, Volby soukromí). Zpracování před odvoláním souhlasu zůstává zákonné.</p>
+      <h2 id="povinnost">8. Je poskytnutí údajů povinné?</h2>
+      <p>Ne. Hlášení chyb, kontrola nových verzí i kontakt jsou dobrovolné. Bez souhlasu funguje aplikace úplně stejně, jen se o nových verzích dozvíte z webu nebo z obchodu s aplikacemi. Automatizované rozhodování ani profilování neprobíhá.</p>
+
+      <h2 id="prava">9. Vaše práva</h2>
+      <p>Máte právo na přístup, opravu, výmaz, omezení zpracování a přenositelnost údajů. Souhlas s hlášením chyb i s kontrolou nových verzí můžete kdykoli odvolat v aplikaci (Nastavení → Soukromí a aktualizace). Zpracování před odvoláním souhlasu zůstává zákonné.</p>
       <p>Pište na <a href="mailto:podpora@vfko.cz">podpora@vfko.cz</a>. Stížnost můžete podat Úřadu pro ochranu osobních údajů (<a href="https://uoou.gov.cz" rel="noopener">uoou.gov.cz</a>).</p>
       <div class="note">
         <p><strong>Právo vznést námitku:</strong> proti zpracování na základě oprávněného zájmu (e-mailová komunikace) můžete kdykoli vznést námitku na <a href="mailto:podpora@vfko.cz">podpora@vfko.cz</a>.</p>
       </div>
 
-      <h2 id="zmeny">9. Účinnost a změny</h2>
-      <p>Tyto zásady platí od 12. 10. 2026. O podstatných změnách informujeme na tomto webu a v <a href="/co-je-noveho/">poznámkách k vydání</a> aplikace.</p>
+      <h2 id="zmeny">10. Účinnost a změny</h2>
+      <p>Tyto zásady platí od [DOPLNIT DATUM] a nahrazují <a href="/zasady/2026-10-12/">znění platné od 12. 10. 2026</a>. O podstatných změnách informujeme na tomto webu, v <a href="/co-je-noveho/">poznámkách k vydání</a> a při spuštění aplikace.</p>
     </article>
   </div>
 </main>
