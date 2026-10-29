@@ -43,11 +43,41 @@
     </div>
 
     <div style="padding-bottom: 120px;">
-      <!--
-        Nová verze = zkopírujte celý blok <section class="release"> a vložte ho NAD ten předchozí.
-        Skupiny používejte jen ty, které ve verzi jsou: Nové / Vylepšení / Opravy / Zabezpečení.
-        id ve tvaru „v1-0-3“ slouží jako odkaz (vfko.cz/co-je-noveho/#v1-0-3), např. z aplikace.
-      -->
+      <section class="release" id="v1-1-0" aria-labelledby="v1-1-0-h">
+        <div>
+          <h2 class="rel-ver" id="v1-1-0-h">1.1.0</h2>
+          <p class="rel-date"><time datetime="2026-11-02">29. 10. 2026</time></p>
+        </div>
+        <div class="rel-body">
+          <h3>Nové</h3>
+          <ul>
+            <li>Horní lišta s výběrem dodavatele, Novou fakturou, Vydanými fakturami, Nastavením a nápovědou. Dodavatele přepnete jedním kliknutím nebo zkratkou Ctrl+1–9 (na macOS ⌘+1–9).</li>
+            <li>Všechna nastavení v jednom okně: dodavatel, doklady, šablony odběratelů, banka, data a zálohy, soukromí a aktualizace, vzhled a správa dodavatelů.</li>
+            <li>Uvítací okno s licenčními podmínkami a volbami soukromí.</li>
+            <li>Kontrola nových verzí ve verzi pro macOS.</li>
+          </ul>
+          <h3>Vylepšení</h3>
+          <ul>
+            <li>Kontrola údajů při vyplňování: IČO, DIČ, PSČ, data, sazba DPH a množství. Hláška se ukáže přímo u pole.</li>
+            <li>Ovládání klávesnicí: Enter v poli položky ji přidá, Esc zavře dialog, zkratky Ctrl+1–9 fungují i s českou klávesnicí.</li>
+            <li>Kontrola úhrad rozpozná vrácené platby a doklady vystavené před obdobím kontroly.</li>
+            <li>Výchozí profil se po vyplnění údajů pojmenuje podle dodavatele.</li>
+          </ul>
+          <h3>Opravy</h3>
+          <ul>
+            <li>QR Platba se netiskne u úhrady hotově nebo kartou.</li>
+            <li>Neplatné datum už nevyvolá chybu aplikace.</li>
+            <li>Spolehlivější ukládání nastavení, šablon odběratelů a loga. Export dat vytvoří zálohu, kterou import vždy přijme.</li>
+          </ul>
+          <h3>Zabezpečení</h3>
+          <ul>
+            <li>Import dat ověřuje obsah zálohy a nic nepřesune mimo data VFko.</li>
+          </ul>
+          <div class="rel-links">
+            <a class="link-arrow" href="https://github.com/coffeeundfun/vfko/releases/tag/v1.1.0">Stáhnout verzi 1.1.0<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l14 0"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg></a>
+          </div>
+        </div>
+      </section>
 
       <section class="release" id="v1-0-2" aria-labelledby="v1-0-2-h">
         <div>
